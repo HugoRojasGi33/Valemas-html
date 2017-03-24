@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <title>Heroic Features - Start Bootstrap Template</title>
+      <!-- Bootstrap Core CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.7.2/css/bootstrap-slider.min.css" />
+      <link href="./dist/css/bootstrap.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+         rel="stylesheet">
+      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+   </head>
+   <body>
+      <div class="carrito_container">
+         <div class="btn-group" role="group" aria-label="...">
+            <div class="btn-group" role="group">
+               <button type="button" class="btn dropdown-toggle btn-profile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               <span class="hidden-xs">Carlos</span>
+               <i class="material-icons md-18 visible-xs-inline">account_circle</i>
+               <i class="material-icons md-18">arrow_drop_down</i>
+               </button>
+               <ul class="dropdown-menu">
+                  <li><a href="#">Mi cuenta</a></li>
+                  <li><a href="#">Transacciones y pedidos</a></li>
+                  <li><a href="#">Cambio de clave</a></li>
+                  <li><a href="#">Contacto</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Salir</a></li>
+               </ul>
+            </div>
+            <button type="button" class="btn btn-default btn-points">   
+            <span class="number-points">23.400</span>
+            <span class="helpler hidden-xs hidden-sm">puntos disponibles</span>
+            <i class="material-icons md-18 visible-xs-inline">control_point</i>
+            </button>
+            <button type="button" class="btn btn-default cart-btn">
+               <div class="buy-info">
+                  <span class="number-points">2</span><span class="number-points">items</span>
+                  <span class="helpler hidden-xs hidden-sm">4500 puntos</span>
+               </div>
+               <i class="material-icons">shopping_cart</i>
+            </button>
+         </div>
+      </div>
+      <header>
+         <!-- Navigation -->
+         <nav class="navbar navbar-default" role="navigation">
+            <div class="container">
+               <!-- Brand and toggle get grouped for better mobile display -->
+               <div class="col-xs-12">
+                  <div class="col-md-2 hidden-xs hidden-sm logo">
+                     <a href="index.html"><img src="dist/images/logo-postobon.png" alt="" class="img-responsive"></a>
+                  </div>
+                  <div class="navbar-header">
+                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                     <i class="material-icons">menu</i>
+                     </button>
+                     <!--  <a class="navbar-brand" href="#">Start Bootstrap</a> -->
+                  </div>
+                  <!-- Collect the nav links, forms, and other content for toggling -->
+                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                     <ul class="nav navbar-nav">
+                        <li>
+                           <div class="input-group visible-xs-block">
+                              <input type="text" class="form-control" placeholder="Search for...">
+                              <span class="input-group-btn">
+                              <button class="btn btn-default search-btn" type="button">
+                              <i class="material-icons">search</i>
+                              </button>
+                              </span>
+                           </div>
+                           <!-- /input-group -->    
+                        </li>
+                        <li>
+                           <a href="#">Noticias</a>
+                        </li>
+                        <li>
+                           <a href="#">CATÁLOGOS</a>
+                        </li>
+                        <li>
+                           <a href="#">¿CÓMO RECLAMAR?</a>
+                        </li>
+                        <li>
+                           <a href="#">CALCULADORA</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <!-- /.navbar-collapse -->
+            </div>
+         </nav>
+      </header>
+      <div class="clearfix"></div>
+      <div class="search-header-box">
+         <div class="container">
+            <div class="col-sm-4 ">
+               <div class="dropdown container-categories category-btn">
+                  <a class="dropdown-toggle btn-block category-tittle" type="button" id="dropdownCategories" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  Busca por Cateogría
+                  <span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu menu-categories" aria-labelledby="dropdownCategories" >
+                     <li class="category">
+                        <a href="#">
+                        <img class="icons-category" src="dist/images/icon-moto.svg" alt="">Accesorios Moto
+                        </a>
+                     </li>
+                     <li class="category">
+                        <a href="#">
+                        <img class="icons-category" src="dist/images/icon-cars.svg" alt="">
+                        Auto y Herramientas
+                        </a>
+                     </li>
+                     <li class="category">
+                        <a href="#">
+                        <img class="icons-category" src="dist/images/icon-health.svg" alt="">
+                        Bienestar
+                        </a>
+                     </li>
+                     <li class="category">
+                        <a href="#">
+                        <img class="icons-category" src="dist/images/icon-house.svg" alt="">
+                        Hogar
+                        </a>
+                     </li>
+                     <li class="category">
+                        <a href="#">
+                        <img class="icons-category" src="dist/images/icon_boy.svg" alt="">
+                        Infantil
+                        </a>
+                     </li>
+                     <li class="category">
+                        <a href="#">
+                        <img class="icons-category" src="dist/images/icon-building.svg" alt="">
+                        Institucional
+                        </a>
+                     </li>
+                     <li class="category">
+                        <a href="#">
+                        <img class="icons-category" src="dist/images/icon-person.svg" alt="">
+                        Institucional
+                        </a>
+                     </li>
+                     <li class="category">
+                        <a href="#">
+                        <img class="icons-category" src="dist/images/icon-laptop.svg" alt="">
+                        Tecnología
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <div class="col-sm-8">
+               <div class="col-lg-12 hidden-xs">
+                  <div class="input-group">
+                     <input type="text" class="form-control search-input" placeholder="Search for...">
+                     <span class="input-group-btn">
+                     <button class="btn btn-default search-btn" type="button">
+                     <i class="material-icons">search</i>
+                     </button>
+                     </span>
+                  </div>
+                  <!-- /input-group -->
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="clearfix"></div>
+      <!-- CARRITO-->
+      <!-- Page Content -->
+      <!-- /SLIDER -->
+      <div class="container-fluid">
+         <div class="row">
+            <div class="">
+               <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                     <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                  </ol>
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner" role="listbox">
+                     <div class="item active">
+                        <img src="dist/images/slider1.svg" alt="...">
+                        <div class="carousel-caption">
+                           <h2>Hola prueba</h2>
+                           <button type="button" class="btn btn-primary btn-lg">Large button</button>
+                        </div>
+                     </div>
+                     <div class="item">
+                        <img src="dist/images/slider1.svg" alt="...">
+                        <div class="carousel-caption">
+                           <h2>Hola prueba</h2>
+                           <button type="button" class="btn btn-primary btn-lg">Large button</button>
+                        </div>
+                     </div>
+                     <div class="item">
+                        <img src="dist/images/slider1.svg" alt="...">
+                        <div class="carousel-caption">
+                           <h2>Hola prueba</h2>
+                           <button type="button" class="btn btn-primary btn-lg">Large button</button>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Controls -->
+                  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Noticias -->
+      <section class="container news">
+         <!-- Title -->
+         <div class="row">
+            <div class="col-lg-12 news-tittle">
+               <h3>NOTICIAS</h3>
+            </div>
+         </div>
+         <div class="row text-center">
+            <!-- newsbox -->
+            <div class="col-md-3 col-sm-6 col-xs-6 hero-feature ">
+               <div class="thumbnail">
+                  <img src="http://placehold.it/800x500" alt="">
+                  <div class="caption">
+                     <h3>Título de la noticias relacionada con Postobón</h3>
+                     <p class="hidden-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                     <p>
+                        <a href="#" class="btn btn-primary">SEGUIR LEYENDO</a>
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <!-- newsbox -->
+            <div class="col-md-3 col-sm-6 col-xs-6 hero-feature ">
+               <div class="thumbnail">
+                  <img src="http://placehold.it/800x500" alt="">
+                  <div class="caption">
+                     <h3>Título de la noticias relacionada con Postobón</h3>
+                     <p class="hidden-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                     <p>
+                        <a href="#" class="btn btn-primary">SEGUIR LEYENDO</a>
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <!-- newsbox -->
+            <div class="col-md-3 col-sm-6 col-xs-6 hero-feature ">
+               <div class="thumbnail">
+                  <img src="http://placehold.it/800x500" alt="">
+                  <div class="caption">
+                     <h3>Título de la noticias relacionada con Postobón</h3>
+                     <p class="hidden-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                     <p>
+                        <a href="#" class="btn btn-primary">SEGUIR LEYENDO</a>
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <!-- newsbox -->
+            <div class="col-md-3 col-sm-6 col-xs-6 hero-feature ">
+               <div class="thumbnail">
+                  <img src="http://placehold.it/800x500" alt="">
+                  <div class="caption">
+                     <h3>Título de la noticias relacionada con Postobón</h3>
+                     <p class="hidden-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                     <p>
+                        <a href="#" class="btn btn-primary">SEGUIR LEYENDO</a>
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Productos destacados -->
+      <section class="container products">
+         <!-- Jumbotron Header -->
+         <!-- Title -->
+         <div class="row">
+            <div class="col-lg-12 secction-tittle">
+               <h3>Latest Features</h3>
+            </div>
+         </div>
+         <div class="col-xs-12 filter">
+
+            <!-- Button trigger modal -->
+            <div class="visible-xs-block visible-sm-block text-center"> 
+               <div class="btn-group " role="group" aria-label="...">
+                  <button type="button" class="btn btn-primary btn-sm filter-btn" data-toggle="modal" data-target="#category">
+                  Filtrar por categoría
+                  </button>
+                  <button type="button" class="btn btn-primary btn-sm filter-btn" data-toggle="modal" data-target="#filter-slider">Filtrar por valor:
+                  </button>
+                  <button type="button" class="btn btn-primary btn-sm filter-btn" data-toggle="modal" data-target="#filter-order">Organizar por:
+                  </button>
+                </div>  
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="category" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+               <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                     <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Filtrar</h4>
+                     </div>
+                     <div class="modal-body">
+                         <div class="radio">
+                           <label>
+                              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                 <img class="icons-category" src="dist/images/icon-moto.svg" alt="">
+                                 Accesorios Moto
+                           </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                            <img class="icons-category" src="dist/images/icon-cars.svg" alt="">
+                            Autos y herramientas
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+                            <img class="icons-category" src="dist/images/icon-health.svg" alt="">
+                            Bienestar
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4">
+                            <img class="icons-category" src="dist/images/icon-house.svg" alt="">
+                            Hogar
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios5" value="option5">
+                            <img class="icons-category" src="dist/images/icon_boy.svg" alt="">
+                            Infantil
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios6" value="option6">
+                            <img class="icons-category" src="dist/images/icon-building.svg" alt="">
+                            Institucional
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios7" value="option7">
+                            <img class="icons-category" src="dist/images/icon-person.svg" alt="">
+                            Para ti
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios6" value="option6">
+                            <img class="icons-category" src="dist/images/icon-laptop.svg" alt="">
+                            Tecnología
+                          </label>
+                        </div>     
+                     </div>
+                     <div class="modal-footer">
+         
+                        <button type="button" class="btn btn-primary">FILTRAR</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="filter-slider" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+               <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                     <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Filtrar por puntos</h4>
+                     </div>
+                     <div class="modal-body">
+                        
+                       <input style="width: 100%" id="ex12a" type="text"/>
+                     </div>
+                     <div class="modal-footer">
+         
+                        <button type="button" class="btn btn-primary">FILTRAR</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- /.row -->
+         <!-- Page Features -->
+         <div class="row text-center">
+            <!-- Product box-->
+            <a href="#">
+               <div class=" col-lg-2 col-md-3 col-sm-6 col-xs-6 hero-feature">
+                  <div class="thumbnail">
+                     <img src="http://placehold.it/800x500" alt="">
+                     <div class="caption">
+                        <h3>Feature Label</h3>
+                        <h4 class="points">1234 puntos</h4>
+                        <p>
+            <a href="http://google.com" class="btn btn-primary btn-block">Buy Now!</a> 
+            </p>
+            </div>
+            </div>
+            </div>
+            </a>
+            <a href="#">
+               <div class=" col-lg-2 col-md-3 col-sm-6 col-xs-6 hero-feature">
+                  <div class="thumbnail">
+                     <img src="http://placehold.it/800x500" alt="">
+                     <div class="caption">
+                        <h3>Feature Label</h3>
+                        <h4 class="points">1234 puntos</h4>
+                        <p>
+            <a href="http://google.com" class="btn btn-primary btn-block">Buy Now!</a> 
+            </p>
+            </div>
+            </div>
+            </div>
+            </a>
+            <a href="#">
+               <div class=" col-lg-2 col-md-3 col-sm-6 col-xs-6 hero-feature">
+                  <div class="thumbnail">
+                     <img src="http://placehold.it/800x500" alt="">
+                     <div class="caption">
+                        <h3>Feature Label</h3>
+                        <h4 class="points">1234 puntos</h4>
+                        <p>
+            <a href="http://google.com" class="btn btn-primary btn-block">Buy Now!</a> 
+            </p>
+            </div>
+            </div>
+            </div>
+            </a>
+            <a href="#">
+               <div class=" col-lg-2 col-md-3 col-sm-6 col-xs-6 hero-feature">
+                  <div class="thumbnail">
+                     <img src="http://placehold.it/800x500" alt="">
+                     <div class="caption">
+                        <h3>Feature Label</h3>
+                        <h4 class="points">1234 puntos</h4>
+                        <p>
+            <a href="http://google.com" class="btn btn-primary btn-block">Buy Now!</a> 
+            </p>
+            </div>
+            </div>
+            </div>
+            </a>
+            <a href="#">
+               <div class=" col-lg-2 col-md-3 col-sm-6 col-xs-6 hero-feature">
+                  <div class="thumbnail">
+                     <img src="http://placehold.it/800x500" alt="">
+                     <div class="caption">
+                        <h3>Feature Label</h3>
+                        <h4 class="points">1234 puntos</h4>
+                        <p>
+            <a href="http://google.com" class="btn btn-primary btn-block">Buy Now!</a> 
+            </p>
+            </div>
+            </div>
+            </div>
+            </a>
+            <a href="#">
+               <div class=" col-lg-2 col-md-3 col-sm-6 col-xs-6 hero-feature">
+                  <div class="thumbnail">
+                     <img src="http://placehold.it/800x500" alt="">
+                     <div class="caption">
+                        <h3>Feature Label</h3>
+                        <h4 class="points">1234 puntos</h4>
+                        <p>
+            <a href="http://google.com" class="btn btn-primary btn-block">Buy Now!</a> 
+            </p>
+            </div>
+            </div>
+            </div>
+            </a>
+         </div>
+      </section>
+      <!-- /.row -->
+      <!-- Footer -->
+      <!--    <footer>
+         <div class="row">
+            <div class="col-lg-12">
+               <p>Copyright &copy; Your Website 2014</p>
+            </div>
+         </div>
+         </footer> -->
+      <!-- /.container -->
+      <!-- jQuery -->
+      <script src="js/jquery.js"></script>
+      <!-- Bootstrap Core JavaScript -->
+      <script src="js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="js/icons.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.7.2/bootstrap-slider.min.js"></script>
+      <script>
+         // With JQuery
+           $("#ex12a").slider({ id: "slider12a", min: 0, max: 10, value: 5 });
+         $("#ex12b").slider({ id: "slider12b", min: 0, max: 10, range: true, value: [3, 7] });
+         $("#ex12c").slider({ id: "slider12c", min: 0, max: 10, range: true, value: [3, 7] });
+      </script>  
+   </body>
+</html>
