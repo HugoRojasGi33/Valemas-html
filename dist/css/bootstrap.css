@@ -6896,11 +6896,27 @@ input[type="password"] {
   background: #fff;
   border: none;
 }
+.menu-categories {
+  width: 100%;
+}
 .navbar-default {
   z-index: 50;
 }
-.menu-categories {
-  width: 100%;
+.modal-content {
+  border-radius: 0px;
+  border: 10px solid rgba(85, 85, 85, 0.8);
+}
+.modal-content .radio {
+  margin-left: 30px;
+}
+.modal-content .modal-header {
+  border-bottom: none;
+}
+.modal-content .modal-title {
+  text-align: center;
+  text-transform: uppercase;
+  color: #777777;
+  font-weight: 600;
 }
 .navbar-default .navbar-nav li a {
   text-transform: uppercase;

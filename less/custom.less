@@ -183,13 +183,30 @@ input[type="text"],input[type="password"]{
 	background: @white;
 	border: none;
 }
-.navbar-default{
-	z-index: 50;
-}
-
 .menu-categories{
 	width: 100%;
 }
+
+.navbar-default{
+	z-index: 50;
+}
+.modal-content{
+	border-radius: 0px;
+	border: 10px solid rgba(85,85,85,0.80);
+	.radio{
+		margin-left: 30px;
+	}
+	.modal-header{
+		border-bottom: none;
+	}
+	.modal-title{
+		text-align: center;
+		text-transform: uppercase;
+		color: @gray-light;
+		font-weight: 600;
+	}
+}
+
 .navbar-default .navbar-nav{
 	li{
 

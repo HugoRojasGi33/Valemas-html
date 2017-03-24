@@ -320,7 +320,7 @@
                         <h4 class="modal-title" id="myModalLabel">Filtrar</h4>
                      </div>
                      <div class="modal-body">
-                         <div class="radio">
+                         <div class="radio  col-xs-10 col-xs-offset-2 ">
                            <label>
                               <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
                                  <img class="icons-category" src="dist/images/icon-moto.svg" alt="">
@@ -395,6 +395,48 @@
                      <div class="modal-body">
                         
                        <input style="width: 100%" id="ex12a" type="text"/>
+                     </div>
+                     <div class="modal-footer">
+         
+                        <button type="button" class="btn btn-primary">FILTRAR</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="modal fade" id="filter-order" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+               <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                     <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Filtrar por puntos</h4>
+                     </div>
+                     <div class="modal-body">
+                        <div class="radio col-xs-offset-2">
+                           <label>
+                              <input type="radio" name="optionsRadios" id="optionsOrder1" value="option1" checked>
+                                 Más redimidos
+                           </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="optionsRadios" id="optionsOrder2" value="option2">
+                            
+                            de menor a mayor valor
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="optionsRadios" id="optionsOrder2" value="option2">
+                            de mayor a menor valor
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="optionsRadios" id="optionsOrder2" value="option2">
+                           
+                            Más recientes
+                          </label>
+                        </div>
                      </div>
                      <div class="modal-footer">
          
