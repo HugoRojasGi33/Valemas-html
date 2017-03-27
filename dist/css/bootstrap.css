@@ -7060,6 +7060,7 @@ input[type="password"] {
   text-transform: uppercase;
   color: #777777;
   font-weight: 600;
+  font-size: 1.5em;
 }
 .relate-products a img {
   margin-bottom: 15px;
@@ -7177,7 +7178,6 @@ input[type="password"] {
 .popular-products {
   border: thin solid #eeeeee;
   padding-top: 15px;
-  padding-bottom: 15px;
   margin-bottom: 15px;
 }
 .popular-products h3 {
@@ -7185,6 +7185,7 @@ input[type="password"] {
   text-transform: uppercase;
   color: #777777;
   font-weight: 600;
+  font-size: 1.5em;
 }
 .popular-products .col-xs-12 {
   padding-left: 0px;
@@ -7195,7 +7196,6 @@ input[type="password"] {
 .popular-products .p-name {
   color: #5BCBF5;
   text-transform: uppercase;
-  margin-top: 15px;
 }
 .popular-products .p-name:hover {
   text-decoration: none;
