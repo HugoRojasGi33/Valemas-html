@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <title>Heroic Features - Start Bootstrap Template</title>
+      <!-- Bootstrap Core CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.7.2/css/bootstrap-slider.min.css" />
+      <link href="./dist/css/bootstrap.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+         rel="stylesheet">
+      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+   </head>
+   <body>
+      <div class="carrito_container">
+         <div class="btn-group" role="group" aria-label="...">
+            <div class="btn-group" role="group">
+               <button type="button" class="btn dropdown-toggle btn-profile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               <span class="hidden-xs">Carlos</span>
+               <i class="material-icons md-18 visible-xs-inline">account_circle</i>
+               <i class="material-icons md-18">arrow_drop_down</i>
+               </button>
+               <ul class="dropdown-menu">
+                  <li><a href="#">Mi cuenta</a></li>
+                  <li><a href="#">Transacciones y pedidos</a></li>
+                  <li><a href="#">Cambio de clave</a></li>
+                  <li><a href="#">Contacto</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Salir</a></li>
+               </ul>
+            </div>
+            <button type="button" class="btn btn-default btn-points">   
+            <span class="number-points">23.400</span>
+            <span class="helpler hidden-xs hidden-sm">puntos disponibles</span>
+            <i class="material-icons md-18 visible-xs-inline">control_point</i>
+            </button>
+            <button type="button" class="btn btn-default cart-btn">
+               <div class="buy-info">
+                  <span class="number-points">2</span><span class="number-points">items</span>
+                  <span class="helpler hidden-xs hidden-sm">4500 puntos</span>
+               </div>
+               <i class="material-icons">shopping_cart</i>
+            </button>
+         </div>
+      </div>
+      <header>
+         <!-- Navigation -->
+         <nav class="navbar navbar-default" role="navigation">
+            <div class="container">
+               <!-- Brand and toggle get grouped for better mobile display -->
+               <div class="col-xs-12">
+                  <div class="col-md-2 hidden-xs hidden-sm logo">
+                     <a href="index.html"><img src="dist/images/logo-postobon.png" alt="" class="img-responsive"></a>
+                  </div>
+                  <div class="navbar-header">
+                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                     <i class="material-icons">menu</i>
+                     </button>
+                     <!--  <a class="navbar-brand" href="#">Start Bootstrap</a> -->
+                  </div>
+                  <!-- Collect the nav links, forms, and other content for toggling -->
+                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                     <ul class="nav navbar-nav">
+                        <li>
+                           <div class="input-group visible-xs-block">
+                              <input type="text" class="form-control" placeholder="Search for...">
+                              <span class="input-group-btn">
+                              <button class="btn btn-default search-btn" type="button">
+                              <i class="material-icons">search</i>
+                              </button>
+                              </span>
+                           </div>
+                           <!-- /input-group -->    
+                        </li>
+                        <li>
+                           <a href="#">Noticias</a>
+                        </li>
+                        <li>
+                           <a href="#">CATÁLOGOS</a>
+                        </li>
+                        <li>
+                           <a href="#">¿CÓMO RECLAMAR?</a>
+                        </li>
+                        <li>
+                           <a href="#">CALCULADORA</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <!-- /.navbar-collapse -->
+            </div>
+         </nav>
+      </header>
+      <div class="clearfix"></div>
+      <div class="search-header-box">
+         <div class="container">
+            <div class="col-sm-4 ">
+               <div class="dropdown container-categories category-btn">
+                  <a class="dropdown-toggle btn-block category-tittle" type="button" id="dropdownCategories" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  Busca por Cateogría
+                  <span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu menu-categories" aria-labelledby="dropdownCategories" >
+                     <li class="category">
+                        <a href="#">
+                        <img class="icons-category" src="dist/images/icon-moto.svg" alt="">Accesorios Moto
+                        </a>
+                     </li>
+                     <li class="category">
+                        <a href="#">
+                        <img class="icons-category" src="dist/images/icon-cars.svg" alt="">
+                        Auto y Herramientas
+                        </a>
+                     </li>
+                     <li class="category">
+                        <a href="#">
+                        <img class="icons-category" src="dist/images/icon-health.svg" alt="">
+                        Bienestar
+                        </a>
+                     </li>
+                     <li class="category">
+                        <a href="#">
+                        <img class="icons-category" src="dist/images/icon-house.svg" alt="">
+                        Hogar
+                        </a>
+                     </li>
+                     <li class="category">
+                        <a href="#">
+                        <img class="icons-category" src="dist/images/icon_boy.svg" alt="">
+                        Infantil
+                        </a>
+                     </li>
+                     <li class="category">
+                        <a href="#">
+                        <img class="icons-category" src="dist/images/icon-building.svg" alt="">
+                        Institucional
+                        </a>
+                     </li>
+                     <li class="category">
+                        <a href="#">
+                        <img class="icons-category" src="dist/images/icon-person.svg" alt="">
+                        Institucional
+                        </a>
+                     </li>
+                     <li class="category">
+                        <a href="#">
+                        <img class="icons-category" src="dist/images/icon-laptop.svg" alt="">
+                        Tecnología
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <div class="col-sm-8">
+               <div class="col-lg-12 hidden-xs">
+                  <div class="input-group">
+                     <input type="text" class="form-control search-input" placeholder="Search for...">
+                     <span class="input-group-btn">
+                     <button class="btn btn-default search-btn" type="button">
+                     <i class="material-icons">search</i>
+                     </button>
+                     </span>
+                  </div>
+                  <!-- /input-group -->
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="clearfix"></div>
+      <!-- CARRITO-->
+      <!-- Page Content -->
+      <section class="container section-container">
+         <div class="">
+            <div class="col-xs-12 col-md-9 product-details">
+               <div class="col-xs-12 col-md-6 img-bg">
+                  <img src="dist/images/700x700.png" alt="" class="img-responsive">
+               </div>
+               <div class="col-xs-12 col-md-6">
+                  <h1>Nombre del producto</h1>
+                  <ol class="breadcrumb">
+                     <li><a href="#">Categoría</a></li>
+                     <li class="active">producto</li>
+                  </ol>
+               </div>
+               <div class="col-xs-12 col-md-6">
+                  <dl>
+                     <dt>Valor puntos</dt>
+                     <dd>
+                        <h3>8900 puntos</h3>
+                     </dd>
+                  </dl>
+                  <dl>
+                     <dt>descripción</dt>
+                     <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla modi maxime, enim facilis laborum necessitatibus assumenda asperiores vel beatae, tempore natus molestias sit excepturi! Expedita ullam culpa ab eos excepturi.</dd>
+                  </dl>
+                  <dl>
+                     <dt>Envío</dt>
+                     <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla modi maxime, enim facilis laborum necessitatibus assumenda asperiores vel beatae, tempore natus molestias sit excepturi! Expedita ullam culpa ab eos excepturi.</dd>
+                  </dl>
+                  <dl>
+                     <dt>Condiciones</dt>
+                     <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla modi maxime, enim facilis laborum necessitatibus assumenda asperiores vel beatae, tempore natus molestias sit excepturi! Expedita ullam culpa ab eos excepturi.</dd>
+                  </dl>
+                  <dt>Cantidad</dt>
+                  <dd>
+                   <!-- minus - plus -->
+                     <p>
+                     </p>
+                     <div class="input-group col-xs-8 col-md-4 quantity ">
+                        <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                        <span class="glyphicon glyphicon-minus"></span>
+                        </button>
+                        </span>
+                        <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+                        <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                        <span class="glyphicon glyphicon-plus"></span>
+                        </button>
+                        </span>
+                     </div>
+                     <p></p>
+                     <p>
+                  </dd>
+                  <div >
+                     <button class="btn btn-lg btn-add-cart" type="submit">Agregar al carrito</button>
+                  </div>
+               </div>
+            </div>
+           <!--  related products -->
+            <div class=" col-xs-12 col-md-3 relate-products">
+               <h3>Relacionados</h3>
+               <div class="col-xs-4">
+                  <a href="">
+                     <img src="dist/images/100x100.png" alt="" class="img-responsive">
+                  </a>
+               </div>
+               <div class="col-xs-4">
+                  <a href="">
+                     <img src="dist/images/100x100.png" alt="" class="img-responsive">
+                  </a>
+               </div>
+               <div class="col-xs-4">
+                  <a href="">
+                     <img src="dist/images/100x100.png" alt="" class="img-responsive">
+                  </a>
+               </div>
+               <div class="col-xs-4">
+                  <a href="">
+                     <img src="dist/images/100x100.png" alt="" class="img-responsive">
+                  </a>
+               </div>
+               <div class="col-xs-4">
+                  <a href="">
+                     <img src="dist/images/100x100.png" alt="" class="img-responsive">
+                  </a>
+               </div>
+                <div class="col-xs-4">
+                  <a href="">
+                     <img src="dist/images/100x100.png" alt="" class="img-responsive">
+                  </a>
+               </div>
+            </div>
+             <!--  related products -->
+            <div class=" col-xs-12 col-md-3 popular-products">
+               <h3>Más populares</h3>
+                <!--  related products  box-->
+               <div class="col-xs-12">
+                  <div class="col-xs-4">
+                      <img src="dist/images/100x100.png" alt="" class="img-responsive">
+                  </div>
+                  <div class="colxs-8">
+                     <a href="#"><p class="p-name">Nombre del producto</p></a>
+                     <small>1245 puntos</small>
+
+                  </div>
+               </div>
+               <!--  related products  box-->
+               <div class="col-xs-12">
+                  <div class="col-xs-4">
+                      <img src="dist/images/100x100.png" alt="" class="img-responsive">
+                  </div>
+                  <div class="colxs-8">
+                     <a href="#"><p class="p-name">Nombre del producto</p></a>
+                     <small>1245 puntos</small>
+
+                  </div>
+               </div>
+               <!--  related products  box-->
+               <div class="col-xs-12">
+                  <div class="col-xs-4">
+                      <img src="dist/images/100x100.png" alt="" class="img-responsive">
+                  </div>
+                  <div class="colxs-8">
+                     <a href="#"><p class="p-name">Nombre del producto</p></a>
+                     <small>1245 puntos</small>
+
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Footer -->
+      <footer class="container-fluid footer">
+         <div class="">
+            <div class="col-md-3">
+               <ul>
+                  <h3>Como reclamar</h3>
+                  <li><a href="">Mecánica</a></li>
+                  <li><a href="">Términos y condiciones</a></li>
+                  <li><a href="">Ayuda tienda virtual</a></li>
+               </ul>
+            </div>
+            <div class="col-md-3">
+               <ul>
+                  <h3>Contáctenos</h3>
+                  <li><a href="">TEL: 018000 12345677</a></li>
+                  <li><a href="">EMAIL: contacto@valemas.com.co</a></li>
+                  <li><a href="">Dirección: dirección</a></li>
+               </ul>
+            </div>
+            <div class=" col-xs-3 col-md-2 pull-right">
+               <img src="dist/images/logo-white.png" class="img-responsive" alt="">
+            </div>
+         </div>
+      </footer>
+      <!-- jQuery -->
+      <script src="js/jquery.js"></script>
+      <!-- Bootstrap Core JavaScript -->
+      <script src="js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="js/icons.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.7.2/bootstrap-slider.min.js"></script>
+      <script>
+         // With JQuery
+           $("#ex12a").slider({ id: "slider12a", min: 0, max: 10, value: 5 });
+         $("#ex12b").slider({ id: "slider12b", min: 0, max: 10, range: true, value: [3, 7] });
+         $("#ex12c").slider({ id: "slider12c", min: 0, max: 10, range: true, value: [3, 7] });
+          $("#ex12d").slider({ id: "slider12d", min: 0, max: 10, range: true, value: [3, 7] });
+      </script> 
+      <script src="dist/js/plus-minus.js"></script>
+   </body>
+</html>
