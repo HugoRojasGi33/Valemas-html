@@ -15,6 +15,19 @@ header{
 input[type="text"],input[type="password"]{
 	border-radius: 0px;
 }
+.affix {
+      top: 50px;
+      z-index:50 ;
+      width: 100%;
+      ul{
+		display: inline-block;
+	      li{
+				display: inline-block;
+				width: 30%
+			}
+		}
+      
+  }
 .btn{
 	border-radius: 0px;
 	border: 0px;
@@ -335,6 +348,14 @@ input[type="text"],input[type="password"]{
 	margin-bottom: 0px;
 	background: @white;
 	border: none;
+}
+.nav-info{
+	text-align: center;
+	z-index: 50;
+	ul{
+		background: @white;
+		
+	}
 }
 .menu-categories{
 	width: 100%;
@@ -729,9 +750,26 @@ input[type="text"],input[type="password"]{
 #slider12c .slider-selection {
 	background: yellow;
 }
-
+.terms-condition-content{
+	z-index: 0;
+}
 // MEDIAQUERIES FOR TABLETS AND LARGE DEVICES
 @media (min-width: @screen-md-min) {
+	.affix {
+      top: 50px;
+      z-index:50;
+      width: auto;
+      text-align: left;
+      border-left: 2px solid @brand-primary;
+      padding-left: 15px;
+      ul{
+
+	      li{
+				display: inline-block;
+			}
+		}
+      
+  }
 	.btn-profile{
 		padding: 10px;
 	}
@@ -763,7 +801,21 @@ input[type="text"],input[type="password"]{
 			}
 		}
 	} 
-	
+	.nav-info{
+	text-align: left;
+	z-index: 50;
+	padding-left: 15px;
+	border-left: 2px solid @brand-primary;
+
+	ul{
+		background: @white;
+		li{
+			a{
+				text-transform: uppercase;
+			}
+		}
+	}
+}
 	.slide{
 		max-height: 390px;
 		overflow-y: hidden;
