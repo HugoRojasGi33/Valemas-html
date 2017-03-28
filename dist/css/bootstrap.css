@@ -6737,10 +6737,89 @@ input[type="text"],
 input[type="password"] {
   border-radius: 0px;
 }
+.account h3 {
+  text-transform: uppercase;
+  color: #5BCBF5;
+  font-weight: 700;
+  font-size: 1.4em;
+  margin-bottom: 15px;
+}
+.account .label-points {
+  color: #777777;
+  text-transform: uppercase;
+  font-size: 1em;
+}
+.account .main-points {
+  vertical-align: middle;
+  border-bottom: 2px solid #006BB6;
+  margin-bottom: 15px;
+}
+.account .chart-box h5 {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.3em;
+  margin-top: 30px;
+}
+.account .chart-box h6 {
+  color: #777777;
+  text-transform: uppercase;
+}
+.account .chart-box .bg-blue {
+  background: #5BCBF5;
+}
+.account .chart-box .bg-green {
+  background: #79D332;
+}
+.account .chart-box .bg-red {
+  background: #CF001C;
+}
+.account .chart-box .bg-black {
+  background: #333333;
+}
+.account .point-box {
+  border: thin solid #eeeeee;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+.account .point-box .blue {
+  color: #5BCBF5;
+}
+.account .point-box .green {
+  color: #79D332;
+}
+.account .point-box .red {
+  color: #CF001C;
+}
+.account .point-box .black {
+  color: #333333;
+}
+.account .point-box h5 {
+  font-weight: 700;
+  text-transform: uppercase;
+  border-bottom: thin solid #eeeeee;
+  padding-bottom: 15px;
+  font-size: 1.3em;
+}
+.account .point-box h6 {
+  color: #777777;
+  text-transform: uppercase;
+  padding-top: 8px;
+}
+.account .point-lg {
+  color: #006BB6;
+  text-transform: uppercase;
+  font-size: 2em;
+  font-weight: 700;
+}
 .affix {
   top: 50px;
   z-index: 50 ;
-  width: 100%;
+  width: 90%;
+  border: thin solid #eeeeee;
+  box-shadow: 0px 1px 3px #777777;
+  border-radius: 2px;
 }
 .affix ul {
   display: inline-block;
@@ -6753,10 +6832,12 @@ input[type="password"] {
   border-radius: 0px;
   border: 0px;
   font-weight: 600;
+  background: #006BB6;
   color: #fff;
 }
 .btn:hover {
   transition-duration: 0.5s;
+  background: #004d83;
   color: #fff;
 }
 .btn-add-cart {
@@ -7314,6 +7395,14 @@ input[type="password"] {
   text-transform: uppercase;
   font-weight: 600;
 }
+.progress {
+  background: #eeeeee;
+  border-radius: 0px;
+  box-shadow: none;
+}
+.progress-bar {
+  box-shadow: none;
+}
 .search-header-box {
   margin-left: auto;
   margin-right: auto;
@@ -7407,12 +7496,16 @@ input[type="password"] {
 }
 @media (min-width: 992px) {
   .affix {
-    top: 50px;
+    top: 20px;
     z-index: 50;
     width: auto;
     text-align: left;
     border-left: 2px solid #006BB6;
     padding-left: 15px;
+    box-shadow: none;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
   }
   .affix ul li {
     display: inline-block;
