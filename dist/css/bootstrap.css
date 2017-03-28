@@ -6726,6 +6726,13 @@ button.close {
 body {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
+h1 {
+  color: #006BB6;
+  font-weight: 700;
+  font-size: 2em;
+  text-transform: uppercase;
+  margin: 0px 0 20px 0;
+}
 input[type="text"],
 input[type="password"] {
   border-radius: 0px;
@@ -6734,14 +6741,23 @@ input[type="password"] {
   border-radius: 0px;
   border: 0px;
   font-weight: 600;
+  color: #fff;
 }
 .btn:hover {
   transition-duration: 0.5s;
+  color: #fff;
+}
+.btn-add-cart {
+  background: #5BCBF5;
+  text-transform: uppercase;
+  margin: 15px 0px;
+}
+.btn-add-cart:hover {
+  background: #2bbcf2;
 }
 .carrito_container {
   position: fixed;
   z-index: 100;
-  background: #006BB6;
   display: block;
   right: 5px;
   top: 0;
@@ -6752,14 +6768,20 @@ input[type="password"] {
   background: #fff;
   border: none;
   border-radius: 0px;
+  color: black;
+  height: 50px;
+}
+.carrito_container .btn-profile:hover {
+  border: none;
 }
 .carrito_container .btn-points {
   color: #fff;
-  background: transparent;
+  background: #5BCBF5;
   border: none;
   border-radius: 0px;
   text-align: left;
   cursor: pointer;
+  height: 50px;
 }
 .carrito_container .btn-points:hover,
 .carrito_container .btn-points:active {
@@ -6771,7 +6793,9 @@ input[type="password"] {
   border: 0px;
   border-radius: 0px;
   text-align: left;
-  background: transparent;
+  color: #fff;
+  height: 50px;
+  background: #5BCBF5;
 }
 .carrito_container .cart-btn:hover,
 .carrito_container .cart-btn:active {
@@ -6796,12 +6820,39 @@ input[type="password"] {
 .carrito_container ul {
   list-style: none;
 }
+.dropdown-menu {
+  border: none;
+  border-radius: 0px;
+}
 .dropdown-menu-right {
   left: auto;
   right: -35px;
 }
 .filter {
   margin-bottom: 15px;
+}
+.footer {
+  background: #006BB6;
+  color: #fff;
+  padding: 30px 20px;
+  margin-top: 30px;
+}
+.footer h3 {
+  text-transform: uppercase;
+}
+.footer ul {
+  list-style: none;
+}
+.footer ul li a {
+  color: #fff;
+  padding: 7px 0px;
+  display: block;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+.footer ul li a:hover {
+  color: #5BCBF5;
+  text-decoration: none;
 }
 .login-form {
   color: #fff;
@@ -6902,9 +6953,44 @@ input[type="password"] {
 .navbar-default {
   z-index: 50;
 }
+.modal-cart .modal-content {
+  padding-top: 30px;
+}
+.modal-cart .modal-content h4 {
+  color: #555555;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.modal-cart .modal-content h5 {
+  color: #777777;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 0.9em;
+}
+.modal-cart .modal-content .go-cart {
+  border: 2px solid #006BB6;
+  background: #fff;
+  color: #006BB6;
+  font-size: 1.2em;
+  margin: 15px 0px;
+}
+.modal-cart .modal-content .go-cart:hover {
+  border: 2px solid #004d83;
+  color: #004d83;
+  background: #eeeeee;
+}
+.modal-cart .modal-content small {
+  text-align: center;
+  margin-top: 30px;
+  display: block;
+}
+.modal-cart .modal-content .modal-footer {
+  border: none;
+}
 .modal-content {
   border-radius: 0px;
   border: 10px solid rgba(85, 85, 85, 0.8);
+  padding: 20px;
 }
 .modal-content .radio {
   margin-left: 30px;
@@ -6949,6 +7035,39 @@ input[type="password"] {
   font-weight: 700;
   text-transform: uppercase;
 }
+.quantity {
+  border: thin solid #777777;
+}
+.quantity .btn-number {
+  color: #555555;
+}
+.quantity .btn-number:hover {
+  background: #eeeeee;
+  color: #3c3c3c;
+}
+.quantity input {
+  border: none;
+  text-align: center;
+}
+.relate-products {
+  border: thin solid #eeeeee;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+.relate-products h3 {
+  margin: 0px 0px 15px 0px;
+  text-transform: uppercase;
+  color: #777777;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+.relate-products a img {
+  margin-bottom: 15px;
+}
+.products {
+  margin-top: 40px;
+}
 .products .secction-tittle {
   background: url("../images/line-background.png");
   background-repeat: repeat-x;
@@ -6963,13 +7082,13 @@ input[type="password"] {
   width: 250px;
   margin: 0 auto 25px auto;
 }
-.products .filter .filter-inner {
+.products .filter {
   background: #eeeeee;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 .products .filter .filter-btn {
-  background: #fff;
+  background: #eeeeee;
   border: none;
   color: #006BB6;
   font-weight: 600;
@@ -6977,6 +7096,10 @@ input[type="password"] {
 .products .filter .filter-btn:hover {
   background: #e2e2e2;
   border: 0px;
+}
+.products .filter .filter-large .dropdown button {
+  background: transparent;
+  color: #006BB6;
 }
 .products .filter .radio {
   font-size: 1.1em;
@@ -7023,6 +7146,64 @@ input[type="password"] {
 }
 .products .btn:hover {
   background: #2bbcf2;
+}
+.product-details {
+  padding: 0px;
+}
+.product-details .img-bg {
+  border: 1px solid #eeeeee;
+  padding: 15px;
+}
+.product-details img {
+  margin-bottom: 30px;
+}
+.product-details .breadcrumb {
+  text-transform: uppercase;
+  background: #fff;
+  font-size: 11px;
+  padding: 0 15px;
+}
+.product-details h3 {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.product-details dl dt {
+  text-transform: uppercase;
+  color: #777777;
+  margin-bottom: 5px;
+}
+.product-details dl dd {
+  line-height: 1.5em;
+}
+.popular-products {
+  border: thin solid #eeeeee;
+  padding-top: 15px;
+  margin-bottom: 15px;
+}
+.popular-products h3 {
+  margin: 0px 0px 15px 0px;
+  text-transform: uppercase;
+  color: #777777;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+.popular-products .col-xs-12 {
+  padding-left: 0px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: thin solid #eeeeee;
+}
+.popular-products .p-name {
+  color: #5BCBF5;
+  text-transform: uppercase;
+}
+.popular-products .p-name:hover {
+  text-decoration: none;
+  color: #006BB6;
+}
+.popular-products small {
+  text-transform: uppercase;
+  font-weight: 600;
 }
 .search-header-box {
   margin-left: auto;
@@ -7081,6 +7262,9 @@ input[type="password"] {
   background: #006BB6;
   color: white;
 }
+.section-container {
+  margin-top: 40px;
+}
 .slide {
   margin-bottom: 30px;
 }
@@ -7118,6 +7302,12 @@ input[type="password"] {
   }
   .login-form h1 {
     text-align: left;
+  }
+  .modal-cart .modal-content {
+    padding-top: 30px;
+  }
+  .modal-cart .modal-content h4 {
+    margin-top: 30px;
   }
   .navbar-default {
     height: 90px;

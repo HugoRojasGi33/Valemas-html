@@ -1,6 +1,14 @@
 body{
 	font-family:@font-family-sans-serif;
 }
+h1{
+	color: @brand-primary;
+	font-weight: 700;
+	font-size: 2em;
+	text-transform: uppercase;
+	margin: 0px 0 20px 0;
+}
+
 header{
 	
 }
@@ -11,15 +19,25 @@ input[type="text"],input[type="password"]{
 	border-radius: 0px;
 	border: 0px;
 	font-weight: 600;
+	color: @white;
 	&:hover{
 		transition-duration: 0.5s;
+		color:@white;
 	}
 
+}
+.btn-add-cart{
+	background: @brand-secondary;
+	text-transform: uppercase;
+	margin: 15px 0px;
+	&:hover{
+		background: darken(@brand-secondary, 10%);
+
+	}
 }
 .carrito_container{
 	position: fixed;
 	z-index: 100;
-	background: @brand-primary;
 	display: block;
 	right: 5px;
 	top: 0;
@@ -30,14 +48,20 @@ input[type="text"],input[type="password"]{
 		background: @white;
 		border: none;
 		border-radius: 0px;
+		color: black;
+		height: 50px;
+		&:hover{
+			border: none;
+		}
 	}
 	.btn-points{
 		color: @white;
-		background: transparent;
+		background: @brand-secondary;
 		border: none;
 		border-radius: 0px;
 		text-align: left;
 		cursor: pointer;
+		height: 50px;
 		&:hover, &:active {
 			background: darken(@brand-secondary, 20%);
 			color: @white;
@@ -48,7 +72,9 @@ input[type="text"],input[type="password"]{
 		border: 0px;
 		border-radius: 0px;
 		text-align: left;
-		background: transparent;
+		color: @white;
+		height: 50px;
+		background: @brand-secondary;
 		&:hover, &:active {
 			background: darken(@brand-primary, 10%);
 			color: @white;
@@ -77,7 +103,10 @@ input[type="text"],input[type="password"]{
 		}
 	}
 }
-
+.dropdown-menu{
+	border: none;
+	border-radius: 0px;
+}
 .dropdown-menu-right {
     left: auto;
     right: -35px;
@@ -85,7 +114,32 @@ input[type="text"],input[type="password"]{
 .filter{
 	margin-bottom: 15px;	
 }
+.footer{
+	background: @brand-primary;
+	color: @white;
+	padding: 30px 20px;
+	margin-top: 30px;
+	h3{
+		text-transform: uppercase;
+	}
+	ul{
+		list-style: none;
+		li{
+			a{
+				color: @white;
+				padding: 7px 0px;
+				display: block;
+				font-size: 13px;
+				text-transform: uppercase;
 
+				&:hover{
+					color: @brand-secondary;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
 ///////// LOG IN VIEW
 .login-form{
 	color: @white;
@@ -190,9 +244,48 @@ input[type="text"],input[type="password"]{
 .navbar-default{
 	z-index: 50;
 }
+.modal-cart{
+	.modal-content{
+		padding-top: 30px;
+		h4{
+			color: @gray;
+			text-transform: uppercase;
+			font-weight: 600;
+
+		}
+		h5{
+			color:@gray-light;
+			text-transform: uppercase;
+			font-weight: 400;
+			font-size: 0.9em;
+		}
+		.go-cart{
+			border: 2px solid @brand-primary;
+			background:@white;
+			color: @brand-primary;
+			font-size: 1.2em;
+			margin: 15px 0px;
+			&:hover{
+				border: 2px solid darken(@brand-primary, 10%);
+				color: darken(@brand-primary, 10%);
+				background: @gray-lighter;
+			}
+
+		}
+		small{
+			text-align: center;
+			margin-top: 30px;
+			display: block;
+		}
+		.modal-footer{
+			border:none;
+		}
+	}
+}
 .modal-content{
 	border-radius: 0px;
 	border: 10px solid rgba(85,85,85,0.80);
+	padding: 20px;
 	.radio{
 		margin-left: 30px;
 	}
@@ -249,7 +342,39 @@ input[type="text"],input[type="password"]{
 	}
 
 }
+.quantity {
+	border: thin solid @gray-light;
+	.btn-number{
+	color: @gray;
+	&:hover{
+		background: @gray-lighter;
+		color:darken(@gray, 10%)
+		}
+	}
+	input{
+		border: none;
+		text-align: center;
+	}
+} 
+.relate-products{
+	border: thin solid @gray-lighter;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+		h3{
+			margin: 0px 0px 15px 0px;
+			text-transform: uppercase;
+			color: @gray-light;
+			font-weight: 600;
+			font-size: 1.5em;
+		}
+		a img {
+		margin-bottom: 15px;	
+
+		}
+}
 .products{
+	margin-top: 40px;
 	.secction-tittle{ 
 			background: url("../images/line-background.png"); 
 			background-repeat: repeat-x;
@@ -266,13 +391,12 @@ input[type="text"],input[type="password"]{
 			}
 		}
 	.filter{
-		.filter-inner{
 			background: @gray-lighter;
 			padding-top: 10px;
 			padding-bottom: 10px; 
-			} 
+			
 		.filter-btn{
-			background: @white;
+			background:@gray-lighter;
 			border: none;
 			color: @brand-primary;
 			font-weight: 600;
@@ -282,6 +406,15 @@ input[type="text"],input[type="password"]{
 						border: 0px;
 					}
 		}
+	.filter-large{
+
+		.dropdown{
+			button{
+				background: transparent;
+				color: @brand-primary;
+			}
+		}
+	}
 	.radio{
 		font-size: 1.1em;
 		margin: 10px 0px;
@@ -340,6 +473,72 @@ input[type="text"],input[type="password"]{
 		}
 
 	}
+}
+.product-details{
+	padding: 0px;
+	.img-bg{
+		border: 1px solid @gray-lighter;	
+		padding: 15px;
+	}
+	img{
+		margin-bottom: 30px;
+		}
+	
+	.breadcrumb{
+		text-transform: uppercase;
+		background: @white;
+		font-size: 11px;
+		padding: 0 15px;
+
+	}
+	h3{
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+	dl{
+		dt{
+			text-transform: uppercase;
+			color: @gray-light;
+			margin-bottom: 5px;
+
+		}
+		dd{
+			line-height: 1.5em;
+		}
+	}
+}
+.popular-products{
+	border: thin solid @gray-lighter;
+	padding-top: 15px;
+	margin-bottom: 15px;
+		h3{
+			margin: 0px 0px 15px 0px;
+			text-transform: uppercase;
+			color: @gray-light;
+			font-weight: 600;
+			font-size: 1.5em;
+		}
+		.col-xs-12{
+			padding-left: 0px;
+			margin-bottom: 15px;
+			padding-bottom: 15px;
+			border-bottom: thin solid @gray-lighter;
+
+		}
+		.p-name{
+				color: @brand-secondary;
+				text-transform: uppercase;
+				&:hover{
+					text-decoration: none;
+					color: @brand-primary;
+				}
+				
+			}
+		small{
+			text-transform: uppercase;
+			font-weight: 600;
+		}
+
 }
 .search-header-box{
 	margin-left: auto;
@@ -400,6 +599,9 @@ input[type="text"],input[type="password"]{
 		color: white;
 	}
 }
+.section-container{
+	margin-top: 40px;
+}
 .slide{
 	margin-bottom: 30px;
 	.carousel-control.left {
@@ -440,6 +642,15 @@ input[type="text"],input[type="password"]{
 	.login-form  h1{
 		text-align: left
 	}
+	.modal-cart{
+	.modal-content{
+		padding-top: 30px;
+		h4{
+			margin-top: 30px;
+			}
+		}
+	}		
+
 	.navbar-default{
 		height: 90px;
 	}
