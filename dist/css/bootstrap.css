@@ -6820,6 +6820,96 @@ input[type="password"] {
 .carrito_container ul {
   list-style: none;
 }
+.cart-page table tr td {
+  padding: 15px 8px;
+}
+.cart-page .closebtn {
+  padding-top: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+  color: #777777;
+}
+.cart-page .closebtn:hover {
+  color: #d9534f;
+}
+.cart-page th {
+  color: #777777;
+}
+.cart-page .p-descript .p-descript-img {
+  float: left;
+  margin-right: 15px;
+}
+.cart-page .p-descript .p-descript-img img {
+  width: 100%;
+  max-width: 70px;
+}
+.cart-page .p-descript p {
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-top: 15px;
+}
+.cart-page .quantity-cart {
+  width: 100px;
+  border: none;
+  background: transparent;
+}
+.cart-page .quantity-cart input {
+  border: none;
+  text-align: center;
+  background: transparent;
+  font-size: 1.3em;
+  color: #333333;
+}
+.cart-page .quantity-cart .btn-number {
+  color: #555555;
+  background: transparent;
+  padding: 7px 9px;
+}
+.cart-page .quantity-cart .btn-number:hover {
+  color: #006BB6;
+  background: transparent;
+}
+.cart-page .cart-points h4 {
+  color: red;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #333333;
+  padding-top: 5px;
+}
+.cart-resume {
+  border: thin solid #5BCBF5;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+.cart-resume h3 {
+  margin: 0px 0px 15px 0px;
+  text-transform: uppercase;
+  color: #777777;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+.cart-resume .buy-info {
+  border-top: none;
+  text-transform: uppercase;
+  color: #777777;
+  padding: 15px 8px;
+}
+.cart-resume .buy-info-number {
+  border-top: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 15px 8px;
+}
+.cart-resume .total-info {
+  border-top: thin solid #333333;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  color: #333333;
+  font-weight: 700;
+  padding: 15px 8px;
+}
 .dropdown-menu {
   border: none;
   border-radius: 0px;
@@ -7043,7 +7133,7 @@ input[type="password"] {
 }
 .quantity .btn-number:hover {
   background: #eeeeee;
-  color: #3c3c3c;
+  color: #006BB6;
 }
 .quantity input {
   border: none;

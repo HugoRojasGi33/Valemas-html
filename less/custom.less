@@ -103,6 +103,105 @@ input[type="text"],input[type="password"]{
 		}
 	}
 }
+.cart-page{
+		table tr td{
+			padding: 15px 8px;
+		}
+		.closebtn{
+			padding-top: 15px;
+			cursor: pointer;;
+			transition: 0.3s;
+			color: @gray-light;
+			&:hover{
+				color: @brand-danger;
+			}
+		}
+		th{
+			color: @gray-light;
+		}
+		.p-descript{
+			.p-descript-img{
+				float: left;
+				margin-right: 15px;
+				img{
+					width: 100%;
+					max-width: 70px;
+				}
+			}
+			p{
+				font-weight: 600;
+				text-transform: uppercase;
+				padding-top: 15px;
+			}	
+		}
+		.quantity-cart{
+				width: 100px;
+				border: none;
+				background: transparent;;
+					input{
+						border: none;
+						text-align: center;
+						background: transparent;
+						font-size: 1.3em;
+						color: @gray-dark;
+					}
+					.btn-number{
+						color:@gray;
+						background: transparent;
+						padding: 7px 9px;
+						&:hover{
+							color: @brand-primary;
+							background: transparent;
+						}
+					}
+				}
+		.cart-points{
+			h4{
+				color: red;
+				font-size: 1.3em;
+				text-transform: uppercase;
+				font-weight: 700;
+				color: @gray-dark;
+				padding-top: 5px;
+			}
+			
+		}
+	
+}
+.cart-resume{
+	border:  thin solid @brand-secondary;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+		h3{
+			margin: 0px 0px 15px 0px;
+			text-transform: uppercase;
+			color: @gray-light;
+			font-weight: 600;
+			font-size: 1.5em;
+		}
+		.buy-info{
+			border-top: none;
+			text-transform: uppercase;
+			color: @gray-light;
+			padding: 15px 8px;
+		}
+		.buy-info-number{
+			border-top: none;
+			text-transform: uppercase;
+			font-weight: 700;
+			padding: 15px 8px;
+		}
+		.total-info{
+			border-top: thin solid @gray-dark;
+			font-size: 1.2em;
+			text-transform: uppercase;
+			color: @gray-dark;
+			font-weight: 700;
+			padding: 15px 8px;
+		}
+
+}
 .dropdown-menu{
 	border: none;
 	border-radius: 0px;
@@ -348,7 +447,7 @@ input[type="text"],input[type="password"]{
 	color: @gray;
 	&:hover{
 		background: @gray-lighter;
-		color:darken(@gray, 10%)
+		color:@brand-primary;
 		}
 	}
 	input{
