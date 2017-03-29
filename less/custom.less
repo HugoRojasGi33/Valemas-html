@@ -14,7 +14,7 @@ h2{
 		font-weight: 700;
 	}
 h3{
-	font-size: 22px;
+	font-size: 21px;
 	font-weight: 600;
 	text-transform: uppercase;
 }	
@@ -29,7 +29,6 @@ input[type="text"],input[type="password"]{
 		text-transform: uppercase;
 		color: @brand-secondary;
 		font-weight: 700;
-		font-size: 23px;
 		margin-bottom: 15px;
 	}
 	.label-points{
@@ -104,6 +103,21 @@ input[type="text"],input[type="password"]{
 		text-transform: uppercase;
 		font-size: 2em;
 		font-weight: 700;
+	}
+}
+.account-info{
+	background: lighten(@brand-secondary, 20%);
+	padding: 4px;
+	margin-bottom: 15px;
+	p{
+		font-weight: 600;
+		float: left; 
+		margin-right: 8px; 
+		padding-top: 13px; 
+	}
+	h4{
+		color: @brand-primary;
+		font-size: 1.6em;
 	}
 }
 .affix {
@@ -311,6 +325,7 @@ input[type="text"],input[type="password"]{
 	box-shadow: inset 0 0 0 5px @gray-lighter;
 	padding: 0px;
 	margin-bottom: 15px;
+	max-width: 60px;
 		}
 .dropdown-menu{
 	border: none;
@@ -607,6 +622,21 @@ input[type="text"],input[type="password"]{
 
 		}
 }
+.pages-btn{
+	button{
+		border: 2px solid @gray-lighter;
+		color: @gray-dark;	
+		background: @white;
+		font-size: 18px;
+		font-weight: 400;
+		&:hover{
+			background:@gray-lighter;
+			color: @gray-dark;
+		}
+
+	}
+	
+}
 .products{
 	margin-top: 40px;
 	.secction-tittle{ 
@@ -893,7 +923,13 @@ input[type="text"],input[type="password"]{
 			padding-left: 0px;
 		}
 	}
-
+	.article-tittle{
+		margin: 15px 0px;
+		border-bottom: 2px solid @gray-lighter;
+		h1{
+			color: @gray-dark;
+		}
+	}
 }
 .slide{
 	margin-bottom: 30px;
@@ -923,8 +959,17 @@ input[type="text"],input[type="password"]{
 #slider12c .slider-selection {
 	background: yellow;
 }
+.table-data{
+	text-transform: uppercase;
+}
+.table-label{
+	font-weight: 600;
+}
 .terms-condition-content{
 	z-index: 0;
+}
+.warning-text{
+	color: #D0011B;
 }
 // MEDIAQUERIES FOR TABLETS AND LARGE DEVICES
 @media (min-width: @screen-md-min) {

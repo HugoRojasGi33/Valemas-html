@@ -6739,7 +6739,7 @@ h2 {
   font-weight: 700;
 }
 h3 {
-  font-size: 22px;
+  font-size: 21px;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -6751,7 +6751,6 @@ input[type="password"] {
   text-transform: uppercase;
   color: #5BCBF5;
   font-weight: 700;
-  font-size: 23px;
   margin-bottom: 15px;
 }
 .account .label-points {
@@ -6822,6 +6821,21 @@ input[type="password"] {
   text-transform: uppercase;
   font-size: 2em;
   font-weight: 700;
+}
+.account-info {
+  background: #bbe9fb;
+  padding: 4px;
+  margin-bottom: 15px;
+}
+.account-info p {
+  font-weight: 600;
+  float: left;
+  margin-right: 8px;
+  padding-top: 13px;
+}
+.account-info h4 {
+  color: #006BB6;
+  font-size: 1.6em;
 }
 .affix {
   top: 50px;
@@ -7011,6 +7025,7 @@ input[type="password"] {
   box-shadow: inset 0 0 0 5px #eeeeee;
   padding: 0px;
   margin-bottom: 15px;
+  max-width: 60px;
 }
 .dropdown-menu {
   border: none;
@@ -7278,6 +7293,17 @@ input[type="password"] {
 .relate-products a img {
   margin-bottom: 15px;
 }
+.pages-btn button {
+  border: 2px solid #eeeeee;
+  color: #333333;
+  background: #fff;
+  font-size: 18px;
+  font-weight: 400;
+}
+.pages-btn button:hover {
+  background: #eeeeee;
+  color: #333333;
+}
 .products {
   margin-top: 40px;
 }
@@ -7530,6 +7556,13 @@ input[type="password"] {
 .section-news .blog-box .info-cont {
   padding-left: 0px;
 }
+.section-news .article-tittle {
+  margin: 15px 0px;
+  border-bottom: 2px solid #eeeeee;
+}
+.section-news .article-tittle h1 {
+  color: #333333;
+}
 .slide {
   margin-bottom: 30px;
 }
@@ -7558,8 +7591,17 @@ input[type="password"] {
 #slider12c .slider-selection {
   background: yellow;
 }
+.table-data {
+  text-transform: uppercase;
+}
+.table-label {
+  font-weight: 600;
+}
 .terms-condition-content {
   z-index: 0;
+}
+.warning-text {
+  color: #D0011B;
 }
 @media (min-width: 992px) {
   .affix {
