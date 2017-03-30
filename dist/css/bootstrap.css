@@ -7076,13 +7076,16 @@ input[type="password"] {
   font-weight: 700;
   text-align: center;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-  font-size: 30px;
 }
 .login-form .logo {
   position: absolute;
   max-width: 90px;
   margin-top: 10px;
   margin-left: 1.5em;
+}
+.login-form .log-in-text h1,
+.login-form .log-in-text h3 {
+  color: #fff;
 }
 .login-form .well {
   background: rgba(73, 73, 73, 0.5);
@@ -7303,6 +7306,9 @@ input[type="password"] {
 .pages-btn button:hover {
   background: #eeeeee;
   color: #333333;
+}
+#password {
+  background: url("../images/fondo2.png");
 }
 .products {
   margin-top: 40px;
