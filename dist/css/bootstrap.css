@@ -6854,6 +6854,7 @@ select {
   font-weight: 600;
   background: #006BB6;
   color: #fff;
+  text-transform: uppercase;
 }
 .btn:hover {
   transition-duration: 0.5s;
@@ -6867,6 +6868,44 @@ select {
 }
 .btn-add-cart:hover {
   background: #2bbcf2;
+}
+.calculator-container {
+  border: thin solid #ccc;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+.calculator-container h4 {
+  color: #5BCBF5;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.calculator-container .form-control {
+  font-size: 2.3em;
+  padding: 15px 8px;
+  height: auto;
+  border: none;
+  margin-bottom: 15px;
+}
+.calculator-container .form-control:focus {
+  box-shadow: none;
+}
+.calculator-change {
+  background: #5BCBF5;
+  border: 2px solid #5BCBF5;
+}
+.calculator-change:hover {
+  background: #2bbcf2;
+  border: 2px solid #2bbcf2;
+}
+.calculator-erase {
+  background: #fff;
+  border: 2px solid #777777;
+  color: #777777;
+}
+.calculator-erase:hover {
+  color: #5e5e5e;
+  background: #fff;
+  border: 2px solid #5e5e5e;
 }
 .carrito_container {
   position: fixed;

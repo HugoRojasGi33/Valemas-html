@@ -140,6 +140,7 @@ select{
 	font-weight: 600;
 	background: @brand-primary;
 	color: @white;
+	text-transform: uppercase;
 	&:hover{
 		transition-duration: 0.5s;
 		background: darken(@brand-primary, 10%);
@@ -154,6 +155,44 @@ select{
 	&:hover{
 		background: darken(@brand-secondary, 10%);
 
+	}
+}
+.calculator-container{
+	border: thin solid #ccc;
+	padding: 15px;
+	margin-bottom: 15px;
+	h4{
+		color: @brand-secondary;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+	.form-control{
+			font-size: 2.3em;
+			padding: 15px 8px;
+			height: auto;
+			border: none;
+			margin-bottom: 15px;
+			&:focus{
+				box-shadow:none;
+			}
+		}
+}
+.calculator-change{
+	background: @brand-secondary;
+	border: 2px solid @brand-secondary;
+	&:hover{
+		background: darken(@brand-secondary, 10%);
+		border: 2px solid darken(@brand-secondary, 10%);
+	}
+}
+.calculator-erase{
+	background: @white;
+	border: 2px solid @gray-light;
+	color: @gray-light;
+	&:hover{
+		color: darken(@gray-light, 10%);
+		background: @white;
+		border: 2px solid darken(@gray-light, 10%)
 	}
 }
 .carrito_container{
