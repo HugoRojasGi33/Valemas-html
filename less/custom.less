@@ -21,8 +21,11 @@ h3{
 header{
 	
 }
-input[type="text"],input[type="password"]{
+input[type="text"],input[type="password"],{
 	border-radius: 0px;
+}
+select{
+	border-radius:0px;
 }
 .account{
 	h3{
@@ -364,6 +367,29 @@ input[type="text"],input[type="password"]{
 		}
 	}
 }
+.form-container{
+	padding-bottom: 60px;
+}
+.form-control{
+	border-radius: 0px;
+}
+.form-border-top{
+	border-top: thin solid #ccc;
+	margin-top: 8px;
+	padding-top: 8px;
+}
+.form-border-bottom{
+	border-bottom: thin solid #ccc;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	display: block;
+}
+.form-group{
+	margin-bottom: 30px;
+}
+.form-margin{
+	margin-bottom: 15px;
+}
 ///////// LOG IN VIEW
 .login-form{
 	color: @white;
@@ -373,8 +399,13 @@ input[type="text"],input[type="password"]{
 	background-size: cover;
 	background-repeat: no-repeat;
 
+	.containter-fluid{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	
 	header{
-		margin-bottom: 8em;
+		margin-bottom: 2em;
 	}
 	h1{
 		font-weight: 700;
@@ -443,6 +474,12 @@ input[type="text"],input[type="password"]{
 	max-width: 100px;
 	margin: 5px 5px;
 }
+.logo-signup{
+		position: absolute;
+    	max-width: 90px;
+    	margin-top: 10px;
+    	margin-left: 1.5em;
+}
 .material-icons {
   font-family: 'Material Icons';
   font-weight: normal;
@@ -486,6 +523,9 @@ input[type="text"],input[type="password"]{
 		background: @white;
 		
 	}
+}
+.nav-sigin{
+	margin-bottom: 60px;
 }
 .menu-categories{
 	width: 100%;
@@ -639,7 +679,7 @@ input[type="text"],input[type="password"]{
 	}
 	
 }
-#password{
+#password-container{
 	background: url("../images/fondo2.png"); 
 }
 .products{
@@ -936,6 +976,25 @@ input[type="text"],input[type="password"]{
 		}
 	}
 }
+.sign-in-btn-back{
+	background: @white;
+	color: @brand-secondary;
+	border: 2px solid @brand-secondary;
+	&:hover{
+		border: 2px solid @brand-primary;
+		background: @white;
+		color: @brand-primary;
+	}
+}
+.sign-in-btn-go{
+	background: @brand-secondary;
+	border: 2px solid @brand-secondary;
+	&:hover{
+		border: 2px solid @brand-primary;
+		background: @brand-primary;
+	}
+
+}
 .slide{
 	margin-bottom: 30px;
 	.carousel-control.left {
@@ -1003,8 +1062,14 @@ input[type="text"],input[type="password"]{
 	.carrito_container{
 		    margin: 0px 20px;
 	}
+	.login-form{
+		header{
+			margin-bottom: 4em;
+		}
+	}
 	.login-form  h1{
-		text-align: left
+		text-align: left;
+
 	}
 	.modal-cart{
 	.modal-content{
