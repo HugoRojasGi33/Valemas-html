@@ -18,10 +18,10 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
       <![endif]-->
    </head>
-   <body class="login-form">
-   
+   <body class="login-form " id="password-container">
+    
          <header>
-            <nav  class="navbar navbar-default">
+            <nav  class="navbar navbar-default ">
                <div class="col-xs-4 col-md-3">
                   <img src="dist/images/logo-postobon.png" alt="" class="img-responsive logo">
                </div>
@@ -30,35 +30,27 @@
      
       <section class="container section-container">
          <div class="row">
-              <div class="col-xs-12 col-md-5 hidden-xs log-in-text">
-            <h1>Con Postobón Juntos Compra, ahorra y gana!</h1>
-            <h3>este es texto complmentario de AKT</h3>
-         </div>
         
-         <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-2">
+        
+         <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-7">
                      
                       <div class="well">
-                      <h2>INGRESAR</h2>
+                      <h2>Cambiar constraseña</h2>
                           <form id="loginForm" method="POST" action="/login/" novalidate="novalidate">
                               <div class="form-group">
-                                  <label for="username" class="control-label">Usuario</label>
-                                  <input type="text" class="form-control" id="username" name="username" value="" required="" title="Please enter you username" placeholder="ejemplo@correo.com">
+                                  <label for="username" class="control-label">Nueva contraseña</label>
+                                  <input type="password" class="form-control" id="new-password" name="username" value="" required="" title="nueva constraseña" placeholder="ejemplo@correo.com">
                                   <span class="help-block"></span>
                               </div>
                               <div class="form-group">
                                   <label for="password" class="control-label">Contraseña</label>
-                                  <input type="password" class="form-control" id="password" name="password" value="" required="" title="Please enter your password">
+                                  <input type="password" class="form-control" id="password" name="password" value="" required="" title="Confirmar constraseña">
                                   <span class="help-block"></span>
                               </div>
                               <div id="loginErrorMsg" class="alert alert-error hide">Usuario y/o contraseña incorrectas</div>
-                              <div class="checkbox">
-                                  <label>
-                                      <input type="checkbox" name="remember" id="remember"> Recordar mis datos
-                                  </label>
-                                   <a href="/forgot/" class=" btn-block">Olvidé mi contraseña</a>
-                              </div>
-                              <button type="submit" class="btn btn-success btn-block" >Login</button>
-                                  <a href="" class=" btn-block register""> REGISTRAME</a>
+                              
+                              <button type="submit" class="btn btn-success btn-block" >Confirmar</button>
+                                  
                           </form>
                       </div>
          

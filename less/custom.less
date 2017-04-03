@@ -21,8 +21,11 @@ h3{
 header{
 	
 }
-input[type="text"],input[type="password"]{
+input[type="text"],input[type="password"],{
 	border-radius: 0px;
+}
+select{
+	border-radius:0px;
 }
 .account{
 	h3{
@@ -137,6 +140,7 @@ input[type="text"],input[type="password"]{
 	font-weight: 600;
 	background: @brand-primary;
 	color: @white;
+	text-transform: uppercase;
 	&:hover{
 		transition-duration: 0.5s;
 		background: darken(@brand-primary, 10%);
@@ -151,6 +155,44 @@ input[type="text"],input[type="password"]{
 	&:hover{
 		background: darken(@brand-secondary, 10%);
 
+	}
+}
+.calculator-container{
+	border: thin solid #ccc;
+	padding: 15px;
+	margin-bottom: 15px;
+	h4{
+		color: @brand-secondary;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+	.form-control{
+			font-size: 2.3em;
+			padding: 15px 8px;
+			height: auto;
+			border: none;
+			margin-bottom: 15px;
+			&:focus{
+				box-shadow:none;
+			}
+		}
+}
+.calculator-change{
+	background: @brand-secondary;
+	border: 2px solid @brand-secondary;
+	&:hover{
+		background: darken(@brand-secondary, 10%);
+		border: 2px solid darken(@brand-secondary, 10%);
+	}
+}
+.calculator-erase{
+	background: @white;
+	border: 2px solid @gray-light;
+	color: @gray-light;
+	&:hover{
+		color: darken(@gray-light, 10%);
+		background: @white;
+		border: 2px solid darken(@gray-light, 10%)
 	}
 }
 .carrito_container{
@@ -364,6 +406,29 @@ input[type="text"],input[type="password"]{
 		}
 	}
 }
+.form-container{
+	padding-bottom: 60px;
+}
+.form-control{
+	border-radius: 0px;
+}
+.form-border-top{
+	border-top: thin solid #ccc;
+	margin-top: 8px;
+	padding-top: 8px;
+}
+.form-border-bottom{
+	border-bottom: thin solid #ccc;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	display: block;
+}
+.form-group{
+	margin-bottom: 30px;
+}
+.form-margin{
+	margin-bottom: 15px;
+}
 ///////// LOG IN VIEW
 .login-form{
 	color: @white;
@@ -373,14 +438,19 @@ input[type="text"],input[type="password"]{
 	background-size: cover;
 	background-repeat: no-repeat;
 
+	.containter-fluid{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	
 	header{
-		margin-bottom: 8em;
+		margin-bottom: 2em;
 	}
 	h1{
 		font-weight: 700;
 		text-align: center;
 		text-shadow: 0 2px 4px rgba(0,0,0,0.50);
-		font-size: 30px;
+		
 	}
 
 	.logo{
@@ -390,7 +460,9 @@ input[type="text"],input[type="password"]{
     	margin-left: 1.5em;
 	}
 	.log-in-text{
-		
+		h1 , h3{
+			color: @white;
+		}
 	}
 	.well{
 		background: rgba(73,73,73,0.50);
@@ -441,6 +513,12 @@ input[type="text"],input[type="password"]{
 	max-width: 100px;
 	margin: 5px 5px;
 }
+.logo-signup{
+		position: absolute;
+    	max-width: 90px;
+    	margin-top: 10px;
+    	margin-left: 1.5em;
+}
 .material-icons {
   font-family: 'Material Icons';
   font-weight: normal;
@@ -484,6 +562,9 @@ input[type="text"],input[type="password"]{
 		background: @white;
 		
 	}
+}
+.nav-sigin{
+	margin-bottom: 60px;
 }
 .menu-categories{
 	width: 100%;
@@ -636,6 +717,9 @@ input[type="text"],input[type="password"]{
 
 	}
 	
+}
+#password-container{
+	background: url("../images/fondo2.png"); 
 }
 .products{
 	margin-top: 40px;
@@ -931,6 +1015,25 @@ input[type="text"],input[type="password"]{
 		}
 	}
 }
+.sign-in-btn-back{
+	background: @white;
+	color: @brand-secondary;
+	border: 2px solid @brand-secondary;
+	&:hover{
+		border: 2px solid @brand-primary;
+		background: @white;
+		color: @brand-primary;
+	}
+}
+.sign-in-btn-go{
+	background: @brand-secondary;
+	border: 2px solid @brand-secondary;
+	&:hover{
+		border: 2px solid @brand-primary;
+		background: @brand-primary;
+	}
+
+}
 .slide{
 	margin-bottom: 30px;
 	.carousel-control.left {
@@ -998,8 +1101,14 @@ input[type="text"],input[type="password"]{
 	.carrito_container{
 		    margin: 0px 20px;
 	}
+	.login-form{
+		header{
+			margin-bottom: 4em;
+		}
+	}
 	.login-form  h1{
-		text-align: left
+		text-align: left;
+
 	}
 	.modal-cart{
 	.modal-content{

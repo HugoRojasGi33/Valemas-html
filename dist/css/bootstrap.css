@@ -6747,6 +6747,9 @@ input[type="text"],
 input[type="password"] {
   border-radius: 0px;
 }
+select {
+  border-radius: 0px;
+}
 .account h3 {
   text-transform: uppercase;
   color: #5BCBF5;
@@ -6851,6 +6854,7 @@ input[type="password"] {
   font-weight: 600;
   background: #006BB6;
   color: #fff;
+  text-transform: uppercase;
 }
 .btn:hover {
   transition-duration: 0.5s;
@@ -6864,6 +6868,44 @@ input[type="password"] {
 }
 .btn-add-cart:hover {
   background: #2bbcf2;
+}
+.calculator-container {
+  border: thin solid #ccc;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+.calculator-container h4 {
+  color: #5BCBF5;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.calculator-container .form-control {
+  font-size: 2.3em;
+  padding: 15px 8px;
+  height: auto;
+  border: none;
+  margin-bottom: 15px;
+}
+.calculator-container .form-control:focus {
+  box-shadow: none;
+}
+.calculator-change {
+  background: #5BCBF5;
+  border: 2px solid #5BCBF5;
+}
+.calculator-change:hover {
+  background: #2bbcf2;
+  border: 2px solid #2bbcf2;
+}
+.calculator-erase {
+  background: #fff;
+  border: 2px solid #777777;
+  color: #777777;
+}
+.calculator-erase:hover {
+  color: #5e5e5e;
+  background: #fff;
+  border: 2px solid #5e5e5e;
 }
 .carrito_container {
   position: fixed;
@@ -7061,6 +7103,29 @@ input[type="password"] {
   color: #5BCBF5;
   text-decoration: none;
 }
+.form-container {
+  padding-bottom: 60px;
+}
+.form-control {
+  border-radius: 0px;
+}
+.form-border-top {
+  border-top: thin solid #ccc;
+  margin-top: 8px;
+  padding-top: 8px;
+}
+.form-border-bottom {
+  border-bottom: thin solid #ccc;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  display: block;
+}
+.form-group {
+  margin-bottom: 30px;
+}
+.form-margin {
+  margin-bottom: 15px;
+}
 .login-form {
   color: #fff;
   min-height: 100%;
@@ -7069,20 +7134,27 @@ input[type="password"] {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.login-form .containter-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
+}
 .login-form header {
-  margin-bottom: 8em;
+  margin-bottom: 2em;
 }
 .login-form h1 {
   font-weight: 700;
   text-align: center;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-  font-size: 30px;
 }
 .login-form .logo {
   position: absolute;
   max-width: 90px;
   margin-top: 10px;
   margin-left: 1.5em;
+}
+.login-form .log-in-text h1,
+.login-form .log-in-text h3 {
+  color: #fff;
 }
 .login-form .well {
   background: rgba(73, 73, 73, 0.5);
@@ -7129,6 +7201,12 @@ input[type="password"] {
   max-width: 100px;
   margin: 5px 5px;
 }
+.logo-signup {
+  position: absolute;
+  max-width: 90px;
+  margin-top: 10px;
+  margin-left: 1.5em;
+}
 .material-icons {
   font-family: 'Material Icons';
   font-weight: normal;
@@ -7174,6 +7252,9 @@ input[type="password"] {
 }
 .nav-info ul {
   background: #fff;
+}
+.nav-sigin {
+  margin-bottom: 60px;
 }
 .menu-categories {
   width: 100%;
@@ -7303,6 +7384,9 @@ input[type="password"] {
 .pages-btn button:hover {
   background: #eeeeee;
   color: #333333;
+}
+#password-container {
+  background: url("../images/fondo2.png");
 }
 .products {
   margin-top: 40px;
@@ -7563,6 +7647,24 @@ input[type="password"] {
 .section-news .article-tittle h1 {
   color: #333333;
 }
+.sign-in-btn-back {
+  background: #fff;
+  color: #5BCBF5;
+  border: 2px solid #5BCBF5;
+}
+.sign-in-btn-back:hover {
+  border: 2px solid #006BB6;
+  background: #fff;
+  color: #006BB6;
+}
+.sign-in-btn-go {
+  background: #5BCBF5;
+  border: 2px solid #5BCBF5;
+}
+.sign-in-btn-go:hover {
+  border: 2px solid #006BB6;
+  background: #006BB6;
+}
 .slide {
   margin-bottom: 30px;
 }
@@ -7624,6 +7726,9 @@ input[type="password"] {
   }
   .carrito_container {
     margin: 0px 20px;
+  }
+  .login-form header {
+    margin-bottom: 4em;
   }
   .login-form h1 {
     text-align: left;
