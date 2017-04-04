@@ -6869,6 +6869,12 @@ select {
 .btn-add-cart:hover {
   background: #2bbcf2;
 }
+.btn-popup {
+  background: #5BCBF5;
+}
+.btn-popup:hover {
+  background: #2bbcf2;
+}
 .calculator-container {
   border: thin solid #ccc;
   padding: 15px;
@@ -7246,6 +7252,22 @@ select {
   background: #fff;
   border: none;
 }
+.modal-promo-text {
+  text-align: center;
+}
+.modal-promo-text h5 {
+  text-transform: uppercase;
+  color: #777777;
+}
+.modal-promo-text h3 {
+  color: #333333;
+  margin-bottom: 5px;
+}
+.modal-promo-text h2 {
+  color: #006BB6;
+  text-transform: lowercase;
+  font-size: 2.5em;
+}
 .nav-info {
   text-align: center;
   z-index: 50;
@@ -7310,7 +7332,7 @@ select {
 .modal-content .modal-title {
   text-align: center;
   text-transform: uppercase;
-  color: #777777;
+  color: #ccc;
   font-weight: 600;
 }
 .navbar-default .navbar-nav li a {
@@ -7357,6 +7379,13 @@ select {
 .quantity input {
   border: none;
   text-align: center;
+}
+.question-popup {
+  text-align: center;
+}
+.question-popup p {
+  font-weight: 600;
+  font-size: 1.5em;
 }
 .relate-products {
   border: thin solid #eeeeee;

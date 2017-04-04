@@ -157,6 +157,12 @@ select{
 
 	}
 }
+.btn-popup{
+	background: @brand-secondary;
+	&:hover{
+		background: darken(@brand-secondary, 10%)
+	}
+}
 .calculator-container{
 	border: thin solid #ccc;
 	padding: 15px;
@@ -166,6 +172,7 @@ select{
 		font-weight: 600;
 		text-transform: uppercase;
 	}
+	
 	.form-control{
 			font-size: 2.3em;
 			padding: 15px 8px;
@@ -555,6 +562,22 @@ select{
 	background: @white;
 	border: none;
 }
+.modal-promo-text{
+	text-align: center;
+	h5{
+		text-transform: uppercase;
+		color: @gray-light;
+	}
+	h3{
+		color: @gray-dark;
+		margin-bottom: 5px;
+	}
+	h2{
+		color: @brand-primary;
+		text-transform: lowercase;
+		font-size: 2.5em;
+	}
+}
 .nav-info{
 	text-align: center;
 	z-index: 50;
@@ -624,7 +647,7 @@ select{
 	.modal-title{
 		text-align: center;
 		text-transform: uppercase;
-		color: @gray-light;
+		color: #ccc;
 		font-weight: 600;
 	}
 }
@@ -685,6 +708,13 @@ select{
 		border: none;
 		text-align: center;
 	}
+}
+.question-popup{
+	text-align: center;
+	p{
+		font-weight: 600;
+		font-size: 1.5em;
+	}
 } 
 .relate-products{
 	border: thin solid @gray-lighter;
@@ -720,6 +750,9 @@ select{
 }
 #password-container{
 	background: url("../images/fondo2.png"); 
+}
+.popup-form{
+
 }
 .products{
 	margin-top: 40px;
