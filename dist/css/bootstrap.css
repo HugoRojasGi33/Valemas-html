@@ -6869,6 +6869,12 @@ select {
 .btn-add-cart:hover {
   background: #2bbcf2;
 }
+.btn-popup {
+  background: #5BCBF5;
+}
+.btn-popup:hover {
+  background: #2bbcf2;
+}
 .calculator-container {
   border: thin solid #ccc;
   padding: 15px;
@@ -7128,11 +7134,12 @@ select {
 }
 .login-form {
   color: #fff;
-  min-height: 100%;
+  min-height: 900px;
   background: url("../images/fondo-postobon.png");
-  background-position: center top;
+  background-position: center bottom;
   background-size: cover;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 .login-form .containter-fluid {
   padding-left: 0px;
@@ -7159,7 +7166,7 @@ select {
 .login-form .well {
   background: rgba(73, 73, 73, 0.5);
   border: none;
-  margin-bottom: 13em;
+  margin-bottom: 3em;
 }
 .login-form .well a {
   color: #5BCBF5;
@@ -7243,8 +7250,24 @@ select {
 }
 .navbar {
   margin-bottom: 0px;
-  background: #fff;
   border: none;
+  background: transparent;
+}
+.modal-promo-text {
+  text-align: center;
+}
+.modal-promo-text h5 {
+  text-transform: uppercase;
+  color: #777777;
+}
+.modal-promo-text h3 {
+  color: #333333;
+  margin-bottom: 5px;
+}
+.modal-promo-text h2 {
+  color: #006BB6;
+  text-transform: lowercase;
+  font-size: 2.5em;
 }
 .nav-info {
   text-align: center;
@@ -7310,7 +7333,7 @@ select {
 .modal-content .modal-title {
   text-align: center;
   text-transform: uppercase;
-  color: #777777;
+  color: #ccc;
   font-weight: 600;
 }
 .navbar-default .navbar-nav li a {
@@ -7358,6 +7381,13 @@ select {
   border: none;
   text-align: center;
 }
+.question-popup {
+  text-align: center;
+}
+.question-popup p {
+  font-weight: 600;
+  font-size: 1.5em;
+}
 .relate-products {
   border: thin solid #eeeeee;
   padding-top: 15px;
@@ -7373,6 +7403,20 @@ select {
 }
 .relate-products a img {
   margin-bottom: 15px;
+}
+.trans-table {
+  margin-top: 30px;
+}
+.transsaction-filter {
+  background: #eeeeee;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.transsaction-filter .form-group {
+  margin: 8px 0px;
+}
+.transsaction-filter .fill-btn {
+  margin-top: 15px;
 }
 .pages-btn button {
   border: 2px solid #eeeeee;
@@ -7727,6 +7771,10 @@ select {
   .carrito_container {
     margin: 0px 20px;
   }
+  .login-form {
+    height: 100%;
+    filter: blur(0px);
+  }
   .login-form header {
     margin-bottom: 4em;
   }
@@ -7741,6 +7789,7 @@ select {
   }
   .navbar-default {
     height: 90px;
+    background: transparent;
   }
   .navbar-default .navbar-nav li {
     margin: 5px 10px;

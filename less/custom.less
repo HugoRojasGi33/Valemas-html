@@ -157,6 +157,12 @@ select{
 
 	}
 }
+.btn-popup{
+	background: @brand-secondary;
+	&:hover{
+		background: darken(@brand-secondary, 10%)
+	}
+}
 .calculator-container{
 	border: thin solid #ccc;
 	padding: 15px;
@@ -166,6 +172,7 @@ select{
 		font-weight: 600;
 		text-transform: uppercase;
 	}
+	
 	.form-control{
 			font-size: 2.3em;
 			padding: 15px 8px;
@@ -432,11 +439,14 @@ select{
 ///////// LOG IN VIEW
 .login-form{
 	color: @white;
-	min-height: 100%;
+	min-height: 900px;
 	background: url("../images/fondo-postobon.png");
-	background-position: center top;
+	background-position: center bottom;
 	background-size: cover;
 	background-repeat: no-repeat;
+	overflow: hidden;
+	
+
 
 	.containter-fluid{
 		padding-left: 0px;
@@ -467,7 +477,7 @@ select{
 	.well{
 		background: rgba(73,73,73,0.50);
 		border: none;
-		margin-bottom: 13em;
+		margin-bottom: 3em;
 
 		a{
 			color: @brand-secondary;
@@ -552,8 +562,24 @@ select{
 
 .navbar{
 	margin-bottom: 0px;
-	background: @white;
 	border: none;
+	background: transparent;
+}
+.modal-promo-text{
+	text-align: center;
+	h5{
+		text-transform: uppercase;
+		color: @gray-light;
+	}
+	h3{
+		color: @gray-dark;
+		margin-bottom: 5px;
+	}
+	h2{
+		color: @brand-primary;
+		text-transform: lowercase;
+		font-size: 2.5em;
+	}
 }
 .nav-info{
 	text-align: center;
@@ -624,7 +650,7 @@ select{
 	.modal-title{
 		text-align: center;
 		text-transform: uppercase;
-		color: @gray-light;
+		color: #ccc;
 		font-weight: 600;
 	}
 }
@@ -685,6 +711,13 @@ select{
 		border: none;
 		text-align: center;
 	}
+}
+.question-popup{
+	text-align: center;
+	p{
+		font-weight: 600;
+		font-size: 1.5em;
+	}
 } 
 .relate-products{
 	border: thin solid @gray-lighter;
@@ -703,6 +736,20 @@ select{
 
 		}
 }
+.trans-table{
+	margin-top: 30px;
+}
+.transsaction-filter{
+	background: @gray-lighter;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	.form-group{
+		margin: 8px 0px;
+	}
+	.fill-btn{
+		margin-top: 15px;
+	} 
+}
 .pages-btn{
 	button{
 		border: 2px solid @gray-lighter;
@@ -720,6 +767,9 @@ select{
 }
 #password-container{
 	background: url("../images/fondo2.png"); 
+}
+.popup-form{
+
 }
 .products{
 	margin-top: 40px;
@@ -1102,6 +1152,8 @@ select{
 		    margin: 0px 20px;
 	}
 	.login-form{
+		height: 100%;
+		filter: blur(0px);
 		header{
 			margin-bottom: 4em;
 		}
@@ -1121,6 +1173,7 @@ select{
 
 	.navbar-default{
 		height: 90px;
+		background: transparent;
 	}
 	.navbar-default .navbar-nav{
 		li{
