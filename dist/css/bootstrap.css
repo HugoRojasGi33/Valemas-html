@@ -6723,6 +6723,10 @@ button.close {
     display: none !important;
   }
 }
+html {
+  min-height: 100%;
+  position: relative;
+}
 body {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
@@ -6868,6 +6872,17 @@ select {
 }
 .btn-add-cart:hover {
   background: #2bbcf2;
+}
+.btn-final-form {
+  margin-top: 30px;
+}
+.btn-terms {
+  background: none;
+  color: #006BB6;
+}
+.btn-terms:hover {
+  background: none;
+  color: #004d83;
 }
 .btn-popup {
   background: #5BCBF5;
@@ -7037,7 +7052,7 @@ select {
 }
 .cart-resume {
   border: thin solid #5BCBF5;
-  padding-top: 15px;
+  padding-top: 30px;
   padding-bottom: 15px;
   margin-bottom: 15px;
 }
@@ -7068,6 +7083,14 @@ select {
   font-weight: 700;
   padding: 15px 8px;
 }
+.catalogue-bg {
+  background: #f6f6f6;
+  padding: 15px;
+}
+.data_terms {
+  max-height: 350px;
+  overflow: scroll;
+}
 .date {
   text-align: center;
   box-shadow: inset 0 0 0 5px #eeeeee;
@@ -7083,6 +7106,10 @@ select {
   left: auto;
   right: -35px;
 }
+.envio {
+  margin-top: 30px;
+  color: #777777;
+}
 .filter {
   margin-bottom: 15px;
 }
@@ -7090,7 +7117,7 @@ select {
   background: #006BB6;
   color: #fff;
   padding: 30px 20px;
-  margin-top: 30px;
+  margin-top: 150px;
 }
 .footer h3 {
   text-transform: uppercase;
@@ -7131,6 +7158,13 @@ select {
 }
 .form-margin {
   margin-bottom: 15px;
+}
+.help-form {
+  font-weight: lighter;
+  color: #777777;
+}
+.icons-blue {
+  color: #006BB6;
 }
 .login-form {
   color: #fff;
@@ -7191,6 +7225,28 @@ select {
   padding: 6px 12px;
   margin-top: 15px;
 }
+.login-form .well .info-password {
+  text-align: center;
+  font-size: 16px;
+  margin: 30px auto;
+}
+.login-form .well .info-password .name-user {
+  font-weight: 600;
+  color: #8bdaf8;
+}
+.login-form .well .btn-back {
+  background: #5BCBF5;
+  text-transform: uppercase;
+  border: none;
+  padding: 12px 12px;
+  color: white;
+  margin-top: 15px;
+  font-size: 13px;
+}
+.login-form .well .btn-back:hover {
+  background: #006BB6;
+  transtion: 0.2s;
+}
 .jumbotron {
   text-align: center;
 }
@@ -7203,6 +7259,30 @@ select {
   width: 250px;
   margin-left: auto;
   margin-right: auto;
+}
+.loader-container p {
+  margin-bottom: 30px;
+}
+.loader {
+  border: 16px solid #eeeeee;
+  /* Light grey */
+  border-top: 16px solid #006BB6;
+  /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loader-cancel {
+  margin: 60px 0px;
 }
 .logo {
   max-width: 100px;
@@ -7432,6 +7512,13 @@ select {
 #password-container {
   background: url("../images/fondo2.png");
 }
+.password-help {
+  background: #b6e1ff;
+  padding: 8px 8px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  font-size: 11px;
+}
 .products {
   margin-top: 40px;
 }
@@ -7608,6 +7695,11 @@ select {
 .related-articles .n-tittle:hover {
   text-decoration: none;
   color: #006BB6;
+}
+.resumen-total {
+  font-size: 18px;
+  font-weight: 600;
+  background: #bbe9fb;
 }
 .search-header-box {
   margin-left: auto;
